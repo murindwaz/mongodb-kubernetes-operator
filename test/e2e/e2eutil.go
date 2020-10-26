@@ -174,6 +174,7 @@ func NewTestMongoDB(name string) (mdbv1.MongoDB, mdbv1.MongoDBUser) {
 							Name: "clusterAdmin",
 						},
 					},
+					ScramCredentialsSecretName: "my-scram",
 				},
 			},
 		},

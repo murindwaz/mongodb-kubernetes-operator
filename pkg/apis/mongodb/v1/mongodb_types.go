@@ -120,6 +120,7 @@ type MongoDBUser struct {
 	Roles []Role `json:"roles"`
 
 	// ScramCredentialsSecretName appended by string "scram-credentials" is the name of the secret object created by the mongoDB operator for storing SCRAM credentials
+	// +required
 	ScramCredentialsSecretName string `json:"scramCredentialsSecretName"`
 }
 
